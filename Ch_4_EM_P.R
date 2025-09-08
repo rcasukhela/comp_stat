@@ -107,3 +107,5 @@ params_init <- c(alpha = alphas[1], beta = betas[1], mu = group_t_p, lambda = gr
 fit <- optim(params_init, nll_opt, method = "L-BFGS-B",
              lower=c(0, 0, 0, 0), upper=c(1, 1, Inf, Inf))
 fit$par
+#     alpha      beta        mu    lambda 
+# 0.1447147 0.5791411 1.7886130 7.3225031 
